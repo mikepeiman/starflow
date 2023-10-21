@@ -5,6 +5,7 @@
 
 	const displayed_count = spring();
 	$: displayed_count.set(count);
+	$: console.log(`🚀 ~ file: Counter.svelte:8 ~ count:`, count)
 	$: offset = modulo($displayed_count, 1);
 
 	function modulo(n, m) {
